@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header img {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul > li {
+    margin: 0 20px;
+}
+
+.navbar ul > li > a {
+    color: #004c94;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main > #home {
+    padding-top: 70px;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main > #home > img {
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+main > #home > h1 {
+    margin-bottom: 20px;
+}
+
+main > #home > p {
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    background-color: #004c94;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main #quem_somos {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #004c94;
+    color: #fff;
+    padding: 20px;
+}
+
+main #quem_somos img {
+    width: 50%;
+    border-radius: 50px;
+}
+
+main #quem_somos div {
+    width: 40%;
+}
+
+main #quem_somos div p {
+    margin: 15px 0;
+}
+
+main #produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #ffff;
+}
+
+main #produtos h2 {
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    height: 600px; 
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    flex-grow: 1;
+    
+}
+
+.carousel-item {
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%; 
+    
+}
+
+.carousel-item h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.carousel-item p {
+    margin: 0 0 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.carousel-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+.carousel-buttons button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+.carousel-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.carousel-controls button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel-controls button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #004c94;
+    text-align: center;
+}
+
+footer .navbar ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer .navbar ul > li {
+    margin: 0 20px;
+}
+
+footer .navbar ul > li > a {
+    color: #004c94;
+    text-decoration: none;
+    font-weight: bold;
+}

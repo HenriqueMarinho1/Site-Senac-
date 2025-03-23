@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://www.sp.senac.br/o/senac-theme/images/logo_senac_default.png" alt="Logo da Empresa">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="">Início</a>
+                </li>
+                <li>
+                    <a href="">Quem Somos</a>
+                </li>
+                <li>
+                    <a href="">Cursos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Seja bem-vindo!</h1>
+            <p>Seja bem-vindo ao SENAC! Estamos felizes em tê-lo conosco nesta jornada de aprendizado e crescimento. Aqui, você encontrará um ambiente de excelência, onde teoria e prática se unem para formar profissionais preparados para o mercado de trabalho. Nossos cursos são desenvolvidos para oferecer a melhor qualificação, com infraestrutura moderna e professores experientes. Estamos comprometidos em ajudá-lo a conquistar seus objetivos e a trilhar um caminho de sucesso. Prepare-se para vivenciar uma experiência transformadora e cheia de oportunidades. Vamos juntos!</p>
+            <img src="https://th.bing.com/th/id/R.0eb41304439f18473d7bf7dac3d9f61c?rik=LaJ7CKM1WvUmfg&riu=http%3a%2f%2fblog.sc.senac.br%2fwp-content%2fuploads%2f2012%2f08%2f11.jpg&ehk=opagVlgU1%2b742lNKgfDv96t7%2fI%2f3yMj%2bJ8PGRD14WMw%3d&risl=&pid=ImgRaw&r=0" alt="Imagem especial da empresa">
+            <a href="" class="botao">Descubra quais os Campus</a>
+        </section>
+        <section id="quem_somos">
+            <div>
+                <h2>QUEM SOMOS</h2>
+                <p>O SENAC (Serviço Nacional de Aprendizagem Comercial) é uma instituição brasileira voltada para a educação profissional. Fundada em 1946, oferece cursos de qualificação, técnicos e superiores em diversas áreas, com foco em comércio, serviços e turismo. A instituição tem como objetivo promover a capacitação de trabalhadores, contribuindo para o desenvolvimento da economia e da sociedade. Presente em todo o Brasil, o SENAC possui unidades em diversos estados e oferece modalidades de ensino presencial e a distância. Além disso, a instituição busca a inclusão social e a melhoria da qualidade de vida por meio da educação.</p>
+            </div>
+                <img src="https://www.sp.senac.br/flash/galeria/infra/cas-v2/images/08.jpg" alt="Foto de Cima do Campus Senac Santo Amaro">
+        </section>
+        <section id="produtos">
+            <h2>CURSOS</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <h2>Bacharelado em Ciência da Computação</h2>
+                            <p>Gosta de computação e quer criar novas ferramentas de tecnologia da informação?</p>
+                            <div class="carousel-buttons">
+                                <button>Comparar agora</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Bacharelado em Sistemas da Informação</h2>
+                            <p>Implementar e gerenciar sistemas, com ênfase em programação</p>
+                            <div class="carousel-buttons">
+                                <button>Comparar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button onclick="prevSlide(0)">Anterior</button>
+                        <button onclick="nextSlide(0)">Próximo</button>
+                    </div>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <h2>Tecnólogo em Sistemas da Informação</h2>
+                            <p>Implementar e gerenciar sistemas, com foco em programação, bancos de dados, redes e segurança da informação no mercado de TI.</p>
+                            <div class="carousel-buttons">
+                                <button>Comparar agora</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Gestão em Tecnologia da Informação</h2>
+                            <p>O curso forma gestores de TI capazes de gerenciar infraestrutura, equipes e recursos tecnológicos</p>
+                            <div class="carousel-buttons">
+                                <button>Comparar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button onclick="prevSlide(1)">Anterior</button>
+                        <button onclick="nextSlide(1)">Próximo</button>
+                    </div>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <h2>Técnologo em Análise e Desenvolvimento de Sistemas</h2>
+                            <p>O Tecnólogo em Análise e Desenvolvimento de Sistemas do SENAC capacita profissionais para projetar, desenvolver e implementar sistemas</p>
+                            <div class="carousel-buttons">
+                                <button>Comparar agora</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Redes de Computadores</h2>
+                            <p>Implementar e gerenciar redes de dados, focando em infraestrutura e segurança</p>
+                            <div class="carousel-buttons" id="slides">
+                                <button>Comparar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button onclick="prevSlide(2)">Anterior</button>
+                        <button onclick="nextSlide(2)">Próximo</button>
+                    </div>
+                </div>                 
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido para o SENAC</p>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="">Início</a>
+                </li>
+                <li>
+                    <a href="">Quem Somos</a>
+                </li>
+                <li>
+                    <a href="">Cursos</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script>
+    let currentIndices = [0, 0, 0];
+    const carouselInners = document.querySelectorAll('.carousel-inner');
+
+    function updateCarousel(index) {
+        const offset = -currentIndices[index] * 100;
+        carouselInners[index].style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide(index) {
+        const totalItems = carouselInners[index].querySelectorAll('.carousel-item').length;
+        if (currentIndices[index] < totalItems - 1) {
+            currentIndices[index]++;
+        } else {
+            currentIndices[index] = 0;
+        }
+        updateCarousel(index);
+    }
+
+    function prevSlide(index) {
+        const totalItems = carouselInners[index].querySelectorAll('.carousel-item').length;
+        if (currentIndices[index] > 0) {
+            currentIndices[index]--;
+        } else {
+            currentIndices[index] = totalItems - 1;
+        }
+        updateCarousel(index);
+    }
+
+    // Configura o intervalo para mudar os slides automaticamente
+    setInterval(() => nextSlide(0), 5000);
+    setInterval(() => nextSlide(1), 5000);
+    setInterval(() => nextSlide(2), 5000);
+</script>
+</html>
