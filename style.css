@@ -5,8 +5,9 @@
 }
 
 body {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
 header {
@@ -40,8 +41,10 @@ header img {
     color: #004c94;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
+/* Seções principais */
 main > #home {
     padding-top: 70px;
     background-color: #fff;
@@ -57,15 +60,19 @@ main > #home > img {
     width: 400px;
     margin-bottom: 20px;
     border-radius: 25px;
+    max-width: 90%;
 }
 
 main > #home > h1 {
     margin-bottom: 20px;
+    font-size: 2.5rem;
 }
 
 main > #home > p {
     max-width: 1200px;
     margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 1.2rem;
 }
 
 .botao {
@@ -75,29 +82,47 @@ main > #home > p {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #003366;
 }
 
 main #quem_somos {
-    height: 80vh;
+    height: auto;
+    min-height: 80vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: #004c94;
     color: #fff;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 main #quem_somos img {
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
     border-radius: 50px;
+    margin: 20px 0;
 }
 
 main #quem_somos div {
-    width: 40%;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+main #quem_somos div h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 main #quem_somos div p {
     margin: 15px 0;
+    font-size: 1.1rem;
 }
 
 main #produtos {
@@ -105,12 +130,14 @@ main #produtos {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 20px;
     background-color: #ffff;
 }
 
 main #produtos h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #004c94;
 }
 
 .carousel-container {
@@ -211,29 +238,113 @@ main #produtos h2 {
     background-color: #0056b3;
 }
 
+/* FOOTER */
 footer {
-    background-color: #fff;
+    padding-top: 80px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #004c94;
-    text-align: center;
 }
 
-footer .navbar ul {
-    display: flex;
-    list-style: none;
-    margin-top: 10px;
-}
-
-footer .navbar ul > li {
-    margin: 0 20px;
-}
-
-footer .navbar ul > li > a {
-    color: #004c94;
+.name1 {
+    color: #4e57d4;
     text-decoration: none;
-    font-weight: bold;
 }
+
+.text1 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.colorblack {
+    color: #333;
+}
+
+.line {
+    width: 40px;
+    height: 4px;
+    background-color: #666;
+    margin: 12px 0 24px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #333;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #4e57d4;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.opc2 {
+    background-color: #ffffff;
+}
+
+
