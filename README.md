@@ -17,7 +17,7 @@ Este projeto é uma landing page web responsiva de cursos oferecidos pelo SENAC.
 
 ### Pré-requisitos
 
-- Navegador web moderno (Chrome, Firefox, Edge, etc.).
+- Navegador web (Chrome, Firefox, Edge, etc.).
 - Conexão com a internet (para carregar imagens e recursos externos).
 
 ### Instalação
