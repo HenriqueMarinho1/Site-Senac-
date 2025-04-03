@@ -4,9 +4,8 @@ Este projeto é uma landing page web responsiva de cursos oferecidos pelo SENAC.
 
 ## Funcionalidades
 
-- **Carousel de Cursos**: Navegue entre diferentes cursos com botões de "Anterior" e "Próximo".
+- **Carousel de Cursos**: Navegue entre diferentes cursos com botões.
 - **Quem somos**: Descreve o Senac como um todo.
-- **Design Responsivo**: A página é totalmente responsiva e se adapta a diferentes tamanhos de tela.
 
 ## Tecnologias Utilizadas
 
